@@ -43,4 +43,16 @@
     return (self.top) ? NO : YES;
 }
 
+- (NSString *)description
+{
+    RIVNode *node = self.top;
+    NSString *description = [node.object description];
+    
+    while (node.nextNode) {
+        node = node.nextNode;
+        description = [NSString stringWithFormat:@"%@, %@", [node.object description], description];
+    }
+    return description;
+}
+
 @end

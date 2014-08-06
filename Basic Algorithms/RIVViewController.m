@@ -7,8 +7,14 @@
 //
 
 #import "RIVViewController.h"
+#import "RIVHanoiTower.h"
+#import "RIVStack.h"
+#import "RIVQueue.h"
 
 @interface RIVViewController ()
+
+@property (strong, nonatomic) RIVQueue *queue;
+@property (strong, nonatomic) RIVStack *stack;
 
 @end
 
@@ -18,6 +24,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+//    RIVHanoiTower *tower = [[RIVHanoiTower alloc] init];
+    
+    
+//    self.queue = [[RIVQueue alloc] init];
+//    [self.queue enqueue:@"first"];
+//    [self.queue enqueue:@"second"];
+//    [self.queue enqueue:@"third"];
+//    NSLog(@"pop: %@,", self.queue.dequeue);
+//    [self.queue enqueue:@"fourth"];
+//    NSLog(@"queue: %@", self.queue.description);
+    
+    
+    
+//    self.stack = [[RIVStack alloc] init];
+//    [self.stack push:@"first"];
+//    [self.stack push:@"second"];
+//    [self.stack push:@"third"];
+//    NSLog(@"pop: %@,", self.stack.pop);
+//    [self.stack push:@"fourth"];
+//    NSLog(@"stack: %@", self.stack.description);
 }
 
 - (void)didReceiveMemoryWarning

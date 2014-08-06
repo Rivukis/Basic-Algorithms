@@ -25,6 +25,7 @@
 		7AAE874F1985E35A00B88CFB /* RIVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE874E1985E35A00B88CFB /* RIVStack.m */; };
 		7AAE87521985F80F00B88CFB /* RIVQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE87511985F80F00B88CFB /* RIVQueue.m */; };
 		7AAE87581986483B00B88CFB /* RIVMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE87571986483B00B88CFB /* RIVMutableArray.m */; };
+		7AAE875B1987084A00B88CFB /* RIVHanoiTower.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE875A1987084A00B88CFB /* RIVHanoiTower.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		7AAE87511985F80F00B88CFB /* RIVQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIVQueue.m; sourceTree = "<group>"; };
 		7AAE87561986483B00B88CFB /* RIVMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIVMutableArray.h; sourceTree = "<group>"; };
 		7AAE87571986483B00B88CFB /* RIVMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIVMutableArray.m; sourceTree = "<group>"; };
+		7AAE87591987084A00B88CFB /* RIVHanoiTower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIVHanoiTower.h; sourceTree = "<group>"; };
+		7AAE875A1987084A00B88CFB /* RIVHanoiTower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIVHanoiTower.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,7 @@
 				7AAE872B1985E25000B88CFB /* Images.xcassets */,
 				7AAE87481985E27E00B88CFB /* Controllers */,
 				7AAE87491985E29300B88CFB /* Model */,
+				7AAE875C19872E4E00B88CFB /* Special Model */,
 				7AAE871A1985E25000B88CFB /* Supporting Files */,
 			);
 			path = "Basic Algorithms";
@@ -186,6 +190,15 @@
 				7AAE87571986483B00B88CFB /* RIVMutableArray.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7AAE875C19872E4E00B88CFB /* Special Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AAE87591987084A00B88CFB /* RIVHanoiTower.h */,
+				7AAE875A1987084A00B88CFB /* RIVHanoiTower.m */,
+			);
+			name = "Special Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 				7AAE87241985E25000B88CFB /* RIVAppDelegate.m in Sources */,
 				7AAE87201985E25000B88CFB /* main.m in Sources */,
 				7AAE874F1985E35A00B88CFB /* RIVStack.m in Sources */,
+				7AAE875B1987084A00B88CFB /* RIVHanoiTower.m in Sources */,
 				7AAE87521985F80F00B88CFB /* RIVQueue.m in Sources */,
 				7AAE872A1985E25000B88CFB /* RIVViewController.m in Sources */,
 				7AAE87581986483B00B88CFB /* RIVMutableArray.m in Sources */,
@@ -497,6 +511,7 @@
 				7AAE87441985E25100B88CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AAE87451985E25100B88CFB /* Build configuration list for PBXNativeTarget "Basic AlgorithmsTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +520,7 @@
 				7AAE87471985E25100B88CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

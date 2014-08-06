@@ -11,8 +11,10 @@
 @interface RIVNode : NSObject
 
 @property (strong, nonatomic) id object;
+@property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) RIVNode *nextNode;
 
 - (instancetype)initWithObject:(id)object;
+- (instancetype)initWithObject:(id)object andKey:(NSString *)key;
 
 @end

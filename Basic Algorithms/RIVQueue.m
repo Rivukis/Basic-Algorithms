@@ -11,7 +11,8 @@
 
 @interface RIVQueue ()
 
-@property (strong, nonatomic) RIVNode *front;
+@property (strong, nonatomic) RIVNode *front; // Head
+@property (strong, nonatomic) RIVNode *rear; // Tail
 @property (assign, nonatomic) NSInteger size;
 
 @end
@@ -25,10 +26,10 @@
     if (self.isEmpty) {
         self.front = newNode;
     } else {
-        RIVNode *rear = self.front;
-        while (rear.nextNode) rear = rear.nextNode;
-        rear.nextNode = newNode;
+        self.rear.nextNode = newNode;
     }
+    
+    self.rear = newNode;
     self.size++;
 }
 
@@ -36,6 +37,7 @@
 {
     id object = self.front.object;
     self.front = self.front.nextNode;
+    if (self.isEmpty) self.rear = nil;
     self.size--;
     return object;
 }
@@ -43,6 +45,18 @@
 - (BOOL)isEmpty
 {
     return (self.front) ? NO : YES;
+}
+
+- (NSString *)description
+{
+    RIVNode *node = self.front;
+    NSString *description = [node.object description];
+    
+    while (node.nextNode) {
+        node = node.nextNode;
+        description = [NSString stringWithFormat:@"%@, %@", description, [node.object description]];
+    }
+    return description;
 }
 
 @end
